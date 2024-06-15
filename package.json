@@ -1,0 +1,21 @@
+{
+  "name": "muzammil2058-mytodosapp",
+  "version": "1.0.3",
+  "description": "A simple todo based app",
+  "main": "index.js",
+  "type": "module",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "muzammil",
+  "license": "MIT",
+  "dependencies": {
+    "chalk-animation": "^2.0.3",
+    "inquirer": "^9.2.23"
+  },
+  "devDependencies": {
+    "@types/chalk-animation": "^1.6.3",
+    "@types/inquirer": "^9.0.7"
+  }
+}
