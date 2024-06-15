@@ -225,10 +225,10 @@ function list() {
 function statusyes(index: number) {
   if (todo.length - index === 1) {
     const store1: any = todo.pop() + "✔️";
-    todo.push(chalk.magenta(store1));
+    todo.push(store1);
   } else if (todo.length - index === todo.length) {
     const store1 = todo.shift() + "✔️";
-    todo.unshift(chalk.magenta(store1));
+    todo.unshift(store1);
   } else if (todo.length - index !== 1 && todo.length - index !== todo.length) {
     const extract: string = todo.slice(index - 1, index) + "✔️";
     todo.splice(index - 1, 1, extract);
@@ -238,10 +238,10 @@ function statusyes(index: number) {
 function statusno(index: number) {
   if (todo.length - index === 1) {
     const store1: any = todo.pop() + "❌";
-    todo.push(chalk.magenta(store1));
+    todo.push(store1);
   } else if (todo.length - index === todo.length) {
     const store1 = todo.shift() + "❌";
-    todo.unshift(chalk.magenta(store1));
+    todo.unshift(store1);
   } else if (todo.length - index !== 1 && todo.length - index !== todo.length) {
     const extract: string = todo.slice(index - 1, index) + "❌";
     todo.splice(index - 1, 1, extract);
