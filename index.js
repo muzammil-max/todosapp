@@ -227,11 +227,11 @@ function list() {
 function statusyes(index) {
     if (todo.length - index === 1) {
         const store1 = todo.pop() + "✔️";
-        todo.push(chalk.magenta(store1));
+        todo.push(store1);
     }
     else if (todo.length - index === todo.length) {
         const store1 = todo.shift() + "✔️";
-        todo.unshift(chalk.magenta(store1));
+        todo.unshift(store1);
     }
     else if (todo.length - index !== 1 && todo.length - index !== todo.length) {
         const extract = todo.slice(index - 1, index) + "✔️";
@@ -241,11 +241,11 @@ function statusyes(index) {
 function statusno(index) {
     if (todo.length - index === 1) {
         const store1 = todo.pop() + "❌";
-        todo.push(chalk.magenta(store1));
+        todo.push(store1);
     }
     else if (todo.length - index === todo.length) {
         const store1 = todo.shift() + "❌";
-        todo.unshift(chalk.magenta(store1));
+        todo.unshift(store1);
     }
     else if (todo.length - index !== 1 && todo.length - index !== todo.length) {
         const extract = todo.slice(index - 1, index) + "❌";
